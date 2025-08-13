@@ -1,0 +1,173 @@
+/* Tekk-o-ween Waybar Theme - Cyberpunk Halloween */
+/* Palette tokens: FF4F00 Magma Flare | FF8C00 Cyber Sunset | FFA500 Neon Ember | 08F7FE Holo-Cyan | F400A1 Punk Fuchsia | 39FF14 Acid Green | 0A0A0A Void Black | 1C1C1E Carbon | 2D2D30 Asphalt | EAEAEA Ghost White | A0A0A0 Static Gray */
+
+* {
+  font-family:
+    "JetBrainsMono Nerd Font", "Caskaydia Cove Nerd Font", "Caskaydia Cove",
+    "Fira Code", "Roboto Mono", monospace;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0;
+}
+
+/* SPOTIFY (spotifatius) */
+#custom-spotify:hover {
+  padding: 0 10px;
+  background-color: #000000;
+  border: 2px solid #ff4f00;
+  border-radius: 10px;
+}
+
+#custom-spotify {
+  margin: 0 500px;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #ff4f00;
+  color: #ffffff;
+}
+
+/* Cyber-button style for modules */
+.modules-left,
+.modules-center {
+  background-color: #ff4f00;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+#right-right {
+  background-color: #ff4f00;
+  border-radius: 10px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#bluetooth:hover,
+#tray:hover,
+#temperature:hover,
+#custom-omarchy:hover,
+.modules-left button:focus,
+.modules-right button:focus,
+.modules-center button:focus,
+.modules-left button:hover,
+.modules-right button:hover,
+.modules-center button:hover {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+#workspaces button.active {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #ff4f00;
+}
+
+/* Module styles with cyber-button influence */
+#custom-omarchy,
+#workspaces,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#bluetooth,
+#mpd {
+  color: #ffffff;
+  background: #ff4f00;
+  margin: 0 5px;
+  padding: 0 5px;
+  border-radius: 20px;
+}
+
+#battery.charging,
+#battery.plugged {
+  border-color: #39ff14;
+  color: #39ff14;
+  box-shadow: 0 0 5px #39ff14;
+  animation: charging 2s ease-in-out infinite;
+}
+
+@keyframes charging {
+  50% {
+    box-shadow:
+      0 0 10px #39ff14,
+      0 0 20px #39ff14;
+  }
+}
+
+@keyframes blink {
+  to {
+    background-color: #f400a1;
+    border-color: #f400a1;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px #f400a1;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  border-color: #f400a1;
+  color: #f400a1;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+#pulseaudio {
+  color: #ffffff;
+}
+
+#pulseaudio.muted {
+  color: #000000;
+}
+
+#pulseaudio.muted:hover {
+  background-color: #ffffff;
+}
+
+#tray {
+  background: rgba(28, 28, 30, 0.8);
+  /* border: 1px solid #2d2d30; */
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #ff4f00;
+}
+
+/* Tooltip styling */
+tooltip {
+  background: rgba(10, 10, 10, 0.95);
+  border: 1px solid #ff4f00;
+  border-radius: 20px;
+}
+
+tooltip label {
+  color: #eaeaea;
+}

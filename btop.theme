@@ -1,0 +1,92 @@
+# Tekk-o-ween btop Theme
+# Palette: FF4F00|FF8C00|FFA500|08F7FE|F400A1|39FF14|0A0A0A|1C1C1E|2D2D30|EAEAEA|A0A0A0
+
+# Main background color
+theme[main_bg]="#0A0A0A"
+
+# Main text color
+theme[main_fg]="#FF4F00"
+
+# Title color for boxes (more orange)
+theme[title]="#FF8C00"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#FF4F00"
+
+# Background color for selected items
+theme[selected_bg]="#FF4F00"
+
+# Foreground color for selected items
+theme[selected_fg]="#0A0A0A"
+
+# Color for inactive/disabled text
+theme[inactive_fg]="#A0A0A0"
+
+# Graph colors
+theme[graph_text]="#FFFFFF"
+
+# Meter backgrounds
+theme[meter_bg]="#FFA500"
+
+# Process box colors
+theme[proc_misc]="#FF8C00"
+
+# CPU box colorsww
+theme[cpu_box]="#FFA500"
+theme[cpu_core]="#FF4F00"
+theme[cpu_graph_low]="#FFA500"
+theme[cpu_graph_mid]="#FFA500"
+theme[cpu_graph_high]="#FF4F00"
+
+# Memory/Disk box colors  
+theme[mem_box]="#FFA500"
+theme[mem_graph_low]="#FFA500"
+theme[mem_graph_mid]="#FFA500"
+theme[mem_graph_high]="#FF8C00"
+
+# Network box colors
+theme[net_box]="#FFA500"
+theme[net_text]="#FF4F00"
+theme[net_graph_low]="#FFA500"
+theme[net_graph_mid]="#FF8C00"
+theme[net_graph_high]="#FF4F00"
+
+# Download graph colors
+theme[download_start]="#FFA500"
+theme[download_mid]="#FF8C00"
+theme[download_end]="#FF4F00"
+
+# Upload graph colors
+theme[upload_start]="#FFA500"
+theme[upload_mid]="#FF8C00"
+theme[upload_end]="#FF4F00"
+
+# Process list colors
+theme[proc_box]="#FFA500"
+theme[proc_cpu_low]="#FFA500"
+theme[proc_cpu_mid]="#FFA500"
+theme[proc_cpu_high]="#FF4F00"
+theme[proc_mem_low]="#FFA500"
+theme[proc_mem_mid]="#FF8C00"
+theme[proc_mem_high]="#FF8C00"
+
+# Temperature colors
+theme[temp_start]="#FFA500"
+theme[temp_mid]="#FFA500"
+theme[temp_end]="#FF4F00"
+
+# Battery colors
+theme[battery_start]="#FFA500"
+theme[battery_mid]="#FFA500"
+theme[battery_end]="#FF4F00"
+
+# Clock color
+theme[clock]="#FF4F00"
+
+# Input box colors
+theme[input_bg]="#1C1C1E"
+theme[input_fg]="#EAEAEA"
+
+# Border colors
+theme[border]="#FF4F00"
+theme[border_secondary]="#FFA500"

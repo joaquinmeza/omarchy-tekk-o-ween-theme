@@ -1,0 +1,75 @@
+/* Tekk-o-ween Walker Theme - Cyberpunk Halloween */
+/* Palette tokens: FF4F00 Magma Flare | FF8C00 Cyber Sunset | FFA500 Neon Ember | 08F7FE Holo-Cyan | F400A1 Punk Fuchsia | 39FF14 Acid Green | 0A0A0A Void Black | 1C1C1E Carbon | 2D2D30 Asphalt | EAEAEA Ghost White | A0A0A0 Static Gray */
+
+@define-color selected-text #E0B667;
+@define-color text #000000;
+@define-color base #b43900;
+@define-color border #FFA500;
+@define-color foreground #ffffff;
+@define-color background #FF8C00; 
+
+
+
+#box {
+    padding: 10px;
+    background: #B43900;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #FF4F00, 0 0 20px #FF8C00;
+    color: #B43900;
+
+}
+
+#search {
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: "JetBrainsMono Nerd Font", "Fira Code", "Roboto Mono", monospace;
+    background: #e0b667;
+    color: #000000;
+    border: 1px solid #FF4F00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 5px #FF8C00, 0 0 10px #FF8C00;
+    text-shadow: 0 0 5px #FFA500;
+}
+
+#search:focus {
+    background-color: #2D2D30;
+    color: #0A0A0A;
+    box-shadow: 0 0 10px #FF8C00, 0 0 20px #FF8C00, 0 0 30px #FFA500;
+    text-shadow: none;
+}
+
+
+
+
+
+/* Cyberpunk glow effects */
+@keyframes cyber-pulse {
+    0% {
+        box-shadow: 0 0 0 #FF4F00, 0 0 10px #FF4F00;
+    }
+    25% {
+        box-shadow: 0 0 15px #FF4F00, 0 0 30px #FF8C00;
+    }
+    50% {
+        box-shadow: 0 0 20px #FF8C00, 0 0 60px #FFA500;
+    }
+    75% {
+        box-shadow: 0 0 25px #FF8C00, 0 0 30px #FF8C00;
+    }
+    100% {
+        box-shadow: 0 0 30px #FF4F00, 0 0 10px #FF4F00;
+    }
+}
+
+#window {
+    animation: cyber-pulse 2s linear infinite;
+    background: transparent;
+    border: 2px solid #b43900;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px #FF4F00, 0 0 40px #FF8C00;
+}

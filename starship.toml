@@ -1,0 +1,124 @@
+# Tekk-o-ween Starship Prompt Theme
+# Palette: FF4F00|FF8C00|FFA500|08F7FE|F400A1|39FF14|0A0A0A|1C1C1E|2D2D30|EAEAEA|A0A0A0
+
+format = """
+[ ](fg:#FF4F00 bg:#000000)\
+$username\
+[](bg:#EAEAEA fg:#FF4F00)\
+[](fg:#EAEAEA bg:#FF8C00)\
+$directory\
+[](fg:#FF8C00 bg:#EAEAEA)\
+[](fg:#EAEAEA bg:#F9C10E)\
+$git_branch\
+$git_status\
+[](fg:#F9C10E bg:#EAEAEA)\
+[](fg:#EAEAEA bg:#2D2D30)\
+$golang\
+$java\
+$nodejs\
+$rust\
+$python\
+[](fg:#2D2D30 bg:#EAEAEA)\
+[](fg:#EAEAEA bg:#FF8C00)\
+$time\
+[](fg:#FF8C00 bg:#EAEAEA)\
+[](fg:#EAEAEA)\
+$character\
+"""
+
+add_newline = false
+
+[character]
+success_symbol = '[▶](bold fg:#F9C10E)'
+error_symbol = '[✖](bold fg:#F400A1)'
+vicmd_symbol = '[◀](bold fg:#08F7FE)'
+
+[os]
+style = "bg:#FF4F00 fg:#0A0A0A"
+disabled = false
+format = '[ $symbol ]($style)'
+
+[os.symbols]
+Windows = '󰍲'
+Ubuntu = '󰕈'
+SUSE = ''
+Raspbian = '󰐿'
+Mint = '󰣭'
+Macos = '󰀵'
+Manjaro = ''
+Linux = '󰌽'
+Gentoo = '󰣨'
+Fedora = '󰣛'
+Alpine = ''
+Amazon = ''
+Android = ''
+Arch = '󰣇'
+Artix = '󰣇'
+EndeavourOS = ''
+CentOS = ''
+Debian = '󰣚'
+Redhat = '󱄛'
+RedHatEnterprise = '󱄛'
+
+[username]
+show_always = true
+style_user = "bg:#FF4F00 fg:#EAEAEA"
+style_root = "bg:#FF4F00 fg:#EAEAEA"
+format = '[ $user ]($style)'
+
+[directory]
+style = "bg:#FF8C00 fg:#0A0A0A"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Desktop" = "󰀾 "
+"Videos" = "󰕧 "
+"Public" = "󰐕 "
+"Templates" = "󰏗 "
+
+[git_branch]
+symbol = "󰘬"
+style = "bg:#F9C10E fg:#0A0A0A"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#F9C10E fg:#0A0A0A"
+format = '[$all_status$ahead_behind ]($style)'
+
+[nodejs]
+symbol = "󰌞󰛦"
+style = "bg:#2D2D30 fg:#08F7FE"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = "󱘗"
+style = "bg:#2D2D30 fg:#08F7FE"
+format = '[ $symbol ($version) ]($style)'
+
+[golang]
+symbol = "󰟓"
+style = "bg:#2D2D30 fg:#08F7FE"
+format = '[ $symbol ($version) ]($style)'
+
+[python]
+version_format = "${raw}"
+symbol = " 🐍 "
+style = "bg:#2D2D30 fg:#08F7FE"
+format = '[${symbol}${version} ]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:#FF8C00 fg:#0A0A0A"
+format = '[ $symbol $context ]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#FF8C00 fg:#0A0A0A"
+format = '[ 󰅐 $time ]($style)'

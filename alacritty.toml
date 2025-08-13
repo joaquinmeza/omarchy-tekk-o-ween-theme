@@ -1,0 +1,75 @@
+# Tekk-o-ween Alacritty Theme Configuration
+# Orange Palette: FF4F00 (Magma Flare), FF9C00 (Bright Orange), FFA500 (Neon Ember), 810806 (Dark Red), BF200E (Crimson), FA4113 (Flame), FE9B13 (Tangerine), F9C10E (Golden), 5C1009 (Burgundy), E9804D (Coral), EB6123 (Burnt Orange), EA5F21 (Pumpkin)
+# Neutrals: 0A0A0A (Void Black), 1C1C1E (Carbon), 2D2D30 (Asphalt), EAEAEA (Ghost White), A0A0A0 (Static Gray)
+
+[window]
+opacity = 0.93
+blur = true
+decorations = "full"
+dynamic_title = true
+padding = { x = 10, y = 10 }
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[colors.primary]
+background = "#0A0A0A"
+foreground = "#EAEAEA"
+
+[colors.cursor]
+text = "#0A0A0A"
+cursor = "#FF9C00"
+
+[colors.selection]
+text = "#EAEAEA"
+background = "#EA5F21"
+
+[colors.normal]
+black = "#0A0A0A"
+red = "#FA4113"
+green = "#FE9B13"
+yellow = "#F9C10E"
+blue = "#EA5F21"
+magenta = "#BF200E"
+cyan = "#E9804D"
+white = "#EAEAEA"
+
+[colors.bright]
+black = "#5A5A5D"
+red = "#FF4F00"
+green = "#FF9C00"
+yellow = "#FFA500"
+blue = "#EB6123"
+magenta = "#810806"
+cyan = "#FE9B13"
+white = "#A0A0A0"
+
+[bell]
+animation = "EaseOutExpo"
+duration = 100
+color = "#FFA500"
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 500
+unfocused_hollow = true
+
+[scrolling]
+history = 10000
+multiplier = 3
