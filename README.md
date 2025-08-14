@@ -60,6 +60,7 @@ All interactive elements follow a distinctive cyber-button style:
 - Hyprlock
 
 ## Installation
-Copy the theme files to your respective configuration directories and reload your applications.
+using the Omarchy Menu, you can go to install > style > theme, and copy/paste the repo.  Or, from terminal `omarchy-theme-install https://github.com/joaquinmeza/omarchy-tekk-o-ween-theme
 
-Welcome to the digital Halloween - where technology meets the supernatural!
+[screenshots/desktop.jpg]
+[screenshots/image2.jpg]
