@@ -62,5 +62,5 @@ All interactive elements follow a distinctive cyber-button style:
 ## Installation
 using the Omarchy Menu, you can go to install > style > theme, and copy/paste the repo.  Or, from terminal `omarchy-theme-install https://github.com/joaquinmeza/omarchy-tekk-o-ween-theme
 
-[screenshots/desktop.jpg]
-[screenshots/image2.jpg]
+![Desktop Screenshot](screenshots/desktop.jpg)
+![Alternate Screenshot](screenshots/image2.jpg)
