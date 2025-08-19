@@ -8,16 +8,8 @@
 @define-color foreground #ffffff;
 @define-color background #FF8C00; 
 
-
-
 #box {
-    padding: 10px;
-    background: #B43900;
-    border: 2px solid #000000;
     border-radius: 10px;
-    box-shadow: 0 0 20px #FF4F00, 0 0 20px #FF8C00;
-    color: #B43900;
-
 }
 
 #search {
@@ -25,13 +17,13 @@
     padding: 12px 20px;
     font-size: 16px;
     font-family: "JetBrainsMono Nerd Font", "Fira Code", "Roboto Mono", monospace;
-    background: #e0b667;
-    color: #000000;
-    border: 1px solid #FF4F00;
+    background: @selected-text;
+    color: @text;
+    border: 1px solid @border;
     border-radius: 10px;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 0 5px #FF8C00, 0 0 10px #FF8C00;
+    box-shadow: 0 0 5px @background, 0 0 10px #@background;
     text-shadow: 0 0 5px #FFA500;
 }
 
@@ -42,11 +34,7 @@
     text-shadow: none;
 }
 
-
-
-
-
-/* Cyberpunk glow effects */
+/* Glow effects */
 @keyframes cyber-pulse {
     0% {
         box-shadow: 0 0 0 #FF4F00, 0 0 10px #FF4F00;
@@ -67,9 +55,8 @@
 
 #window {
     animation: cyber-pulse 2s linear infinite;
-    background: transparent;
+    background: #000000;
     border: 2px solid #b43900;
     border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 0 10px #FF4F00, 0 0 40px #FF8C00;
+    padding: 10px;
 }
